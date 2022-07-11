@@ -6,6 +6,7 @@ import babel from "gulp-babel";
 import del from "del";
 import concat from "gulp-concat";
 import browserSync from "browser-sync";
+import pug from "gulp-pug";
 import { join } from "path";
 
 browserSync.create();
@@ -20,7 +21,7 @@ const path = {
     dest: "dest/js",
   },
   html: {
-    src: "src/index.html",
+    src: "src/html/index.pug",
     dest: "dest",
   },
 };
@@ -30,7 +31,7 @@ function clean() {
 }
 
 function html() {
-  return gulp.src(path.html.src).pipe(gulp.dest(path.html.dest));
+  return gulp.src(path.html.src).pipe(pug()).pipe(gulp.dest(path.html.dest));
 }
 
 function styles() {
