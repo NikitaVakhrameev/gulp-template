@@ -1,1 +1,3 @@
-
+.participants.nav__participants
+  img.participants__icon (src="" alt="")
+  .participants__status 8 участников
