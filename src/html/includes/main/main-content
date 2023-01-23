@@ -1,0 +1,13 @@
+.content.main__content
+  .content__item Нужно сделать
+    .content__cards-field
+      .card
+  .content__item В процессе
+    .content__cards-field
+      .card
+  .content__item Ревью
+    .content__cards-field
+      .card
+  .content__item Сделано
+    .content__cards-field
+      .card
