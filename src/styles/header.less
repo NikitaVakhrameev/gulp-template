@@ -1,9 +1,11 @@
 @import "./variables.less";
 @import "./header-logo.less";
 @import "./header-search.less";
-@import "./header-user.less";
+@import "./header-settings.less";
 
 .header {
-
-    border: solid 1px @header-color;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px @border-color;
+  height: 64px;
 }
